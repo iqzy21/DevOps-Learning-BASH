@@ -51,7 +51,14 @@ Gettng started : bash commands
    e.g read -p "Enter your name: " name echo "Hello, $name!"
    Use read to get input from the user and store it in a variable.
 
+Tips
+Start small: Write simple scripts first.
+Use meaningful names: This makes your script easier to understand.
+Test often: Avoid surprises by running your scripts frequently.
 
+Practice Makes Perfect!
+The more you script, the better you get. Try automating small tasks daily.
+Bash scripting becomes easier with repetition—keep at it!
 
    
 
