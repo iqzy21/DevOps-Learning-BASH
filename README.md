@@ -178,6 +178,14 @@ Now you can see here it being used:
 
 ---
 
-## Lesson 7: Arithmetic Operations
+## Lesson 7: Arithmetic Expansion
+bash provides a straighforward way to do mathmatic calcyulations by using $((  ))<img width="526" height="295" alt="image" src="https://github.com/user-attachments/assets/2dd3332f-d170-4d6d-86de-4b36d7e71f45" />
+<img width="367" height="329" alt="image" src="https://github.com/user-attachments/assets/5a3ffe8d-e10a-4631-844c-61fc7427645e" />
 
-*(This section appears to be incomplete in your original notes)*
+## Lesson 8: Arithmetic expansion (With Parameters)
+
+
+
+
+
+
