@@ -60,6 +60,7 @@ Practice Makes Perfect!
 The more you script, the better you get. Try automating small tasks daily.
 Bash scripting becomes easier with repetition—keep at it!
 
+<img width="802" height="569" alt="image" src="https://github.com/user-attachments/assets/7d529f1f-59fb-4cfc-89b3-10af3623c820" />
    
 
    
