@@ -270,8 +270,24 @@ example <img width="399" height="380" alt="image" src="https://github.com/user-a
 
 functions can accept peramaters and you casn pass data to them making them more usable <img width="714" height="327" alt="image" src="https://github.com/user-attachments/assets/bc9441b0-9b5c-445a-80e0-756054ca5dcb" />
 
+## Lesson 18:  functional parameter
+there are 2 types of parameters positional and special 
+a position parameter uses a local variable which the value is stored in then the variable is used by the function 
 
+bash provides a set of special parameters that can be accesssed in functions <img width="664" height="675" alt="image" src="https://github.com/user-attachments/assets/293267af-bee1-489a-98b7-e172dd5c209d" />
 
+positional parameters allow us to pass data to functions and lets us access them using numbered variabled like $1 and $2
+special parameters allw us to get more info about our script by using arguments such as 
+$# to display argument number
+$0 for script name
+and $@ for all arguments 
 
+## Lesson 19:  user inputs 
+user inputs allows users to interact with the script 
+read - command used for user inputs
+<img width="442" height="345" alt="image" src="https://github.com/user-attachments/assets/73909e62-e1fc-41db-aaf0-a7ce1a8e8e3a" />
 
+read command with command line argument both methods can be combined
 
+## Lesson 20:  handling bad errors
+1 way to validate user input is by conditional statments to check validity of input 
