@@ -183,9 +183,24 @@ bash provides a straighforward way to do mathmatic calcyulations by using $((  )
 <img width="367" height="329" alt="image" src="https://github.com/user-attachments/assets/5a3ffe8d-e10a-4631-844c-61fc7427645e" />
 
 ## Lesson 8: Arithmetic expansion (With Parameters)
+same thing as lesson 7 instead of a value you just put $(number)
+how ever i learnt that if you run the script it wont prompt you to add numbers like python you have to put the numbers ur self in the command 
+<img width="434" height="375" alt="image" src="https://github.com/user-attachments/assets/8fa36867-0a51-4a3e-809e-6a67392ebed2" />
 
+## Lesson 9 and 10: install vs code 
+alrerady did that
 
+## Lesson 11: if statements
+if statments starts with if then ends with fi inbetween them there is a then 
+when the if condition is true the code between then and fi will execute 
 
+comparison operators
+eq = equals or ==
+ne = not equal to !=
+lt = less than < with []
+gt = greater than > with []
+le = less than or equal to 
+get =  greater than r equal to
+if conditions have to be placed in [] 
 
-
-
+logical operators 
