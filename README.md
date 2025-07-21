@@ -248,6 +248,30 @@ example of for loop<img width="764" height="338" alt="image" src="https://github
 for looping an array
 <img width="331" height="349" alt="image" src="https://github.com/user-attachments/assets/2f56ad99-ca31-4f92-aa6f-bc120166ab3e" />
 
-sequence command - this justout puts a given range you input
+sequence command (seq) - this justout puts a given range you input
+<img width="348" height="335" alt="image" src="https://github.com/user-attachments/assets/f2187d47-c7c9-4c24-b8d3-782a3da5e4df" />
+## Lesson 16: break and continue
+break and continue are control statments and provide more control over your loops allowing yuopui to interupt itterations based on condition
+
+break - breaks the loop regaredless of where it is <img width="770" height="399" alt="image" src="https://github.com/user-attachments/assets/c325b426-c9f2-41ca-bf9a-1604571a75c4" />
+
+continue - skips the current itteration at what value is set and moves onto the next <img width="701" height="220" alt="image" src="https://github.com/user-attachments/assets/c8572441-284d-42e6-9fa3-cde7a9dcdfea" />
+
+
+example break with while loop <img width="489" height="504" alt="image" src="https://github.com/user-attachments/assets/0770cca6-3287-4413-be6d-bea582950dac" />
+
+## Lesson 17: basic functions 
+functions turn our code into moduels, improve script organisation and enchance reusability
+they are like mini programs in our bash scripts
+synatx of a function is -0 function_name() then folowed by {}<img width="234" height="116" alt="image" src="https://github.com/user-attachments/assets/7015a85d-997b-4d29-8df3-daa7258d9d6b" />
+
+example <img width="399" height="380" alt="image" src="https://github.com/user-attachments/assets/3f532bb9-4684-4967-b448-1478943ed238" />
+
+
+functions can accept peramaters and you casn pass data to them making them more usable <img width="714" height="327" alt="image" src="https://github.com/user-attachments/assets/bc9441b0-9b5c-445a-80e0-756054ca5dcb" />
+
+
+
+
 
 
