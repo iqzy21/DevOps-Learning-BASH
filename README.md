@@ -202,5 +202,52 @@ gt = greater than > with []
 le = less than or equal to 
 get =  greater than r equal to
 if conditions have to be placed in [] 
+<img width="392" height="275" alt="image" src="https://github.com/user-attachments/assets/4688cf6b-cf10-4786-a999-b71acf939ff3" />
 
-logical operators 
+logical operators logical operators help make scripts make more decisions 
+&& = and
+|| = or
+<img width="586" height="313" alt="image" src="https://github.com/user-attachments/assets/865d0dfa-934a-4479-a644-39257f88c79b" />
+
+## Lesson 12: else and elif 
+else allows an altervnitive block of code to be executed when the if condition isnt met and provides an alternitive direction 
+<img width="323" height="133" alt="Screenshot 2025-07-21 191048" src="https://github.com/user-attachments/assets/1615b4c5-d9a7-4873-8c4d-ca96659dcd6c" />
+example <img width="298" height="298" alt="image" src="https://github.com/user-attachments/assets/19c8ed6e-6bc4-4f6a-b99f-afd2d1a6819b" />
+
+to note then is also needed after elif <img width="397" height="440" alt="image" src="https://github.com/user-attachments/assets/276972c1-f20b-465a-a265-1f2e013ef694" />
+
+## Lesson 13: nested if statments 
+nested if statments allow us to create more complex structured by allowing of statments in an if statment 
+<img width="454" height="327" alt="image" src="https://github.com/user-attachments/assets/9fc100af-ae49-4de6-8f2d-8dbaa4a839b0" />
+from this i took that the structure is very different to python for nested if statments and that fi is still needed for a nested if statment 
+
+## Lesson 14: while loops
+while loops allow you to repeat block of code aslong as a condition remains true of a condition becomes false 
+
+the 3  commands used are 
+while
+do
+done <img width="303" height="136" alt="image" src="https://github.com/user-attachments/assets/b6ede938-fd0a-4267-814d-ee35514e4b3d" /
+example
+<img width="484" height="515" alt="image" src="https://github.com/user-attachments/assets/20372853-c36e-4ebd-95c7-ce791e0e4f1d" />
+while loop example <img width="755" height="461" alt="image" src="https://github.com/user-attachments/assets/003d3417-c44c-457d-9921-dc301f8bdca9" />
+
+while loops are mainly used for automatic tasks and itterating data 
+
+## Lesson 15: foor loops
+foor loops allow you to iterrate code for a set amount of times you set it for 
+in bash for loops have 4 key words
+for 
+in
+do
+done
+<img width="284" height="114" alt="image" src="https://github.com/user-attachments/assets/9f9e601e-1fae-4431-b490-d19e6c3739eb" />
+
+example of for loop<img width="764" height="338" alt="image" src="https://github.com/user-attachments/assets/dac1c361-15ea-42ad-a4e6-28a1cee50bf9" />
+
+for looping an array
+<img width="331" height="349" alt="image" src="https://github.com/user-attachments/assets/2f56ad99-ca31-4f92-aa6f-bc120166ab3e" />
+
+sequence command - this justout puts a given range you input
+
+
