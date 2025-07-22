@@ -306,6 +306,36 @@ pre error handling
 <img width="630" height="260" alt="image" src="https://github.com/user-attachments/assets/c608b427-e325-42fd-8fe5-a88a5df5b9e3" />
 
 post error handling <img width="795" height="367" alt="image" src="https://github.com/user-attachments/assets/e38060f6-dbec-41ea-88f4-def93acb4e7b" />
+## Lesson 23: if statment recap for error handling
+this is basic error handling using if and else
+<img width="488" height="300" alt="image" src="https://github.com/user-attachments/assets/2a942cb3-415a-461d-877d-5c7c01d041e9" />
+
+lesson 24: Exit Codes
+exit code is a numerical value that tells you wether if the command or script executed has been complted or failed 0 being success anything other than 0 being an error 
+the command to check this in a linux terminal is echo $? 
+<img width="730" height="275" alt="image" src="https://github.com/user-attachments/assets/6b06b519-dc36-4e68-a75e-b6fa46d65c79" />
+
+script example <img width="685" height="564" alt="image" src="https://github.com/user-attachments/assets/15c7bc89-6993-4dc1-aab6-aadf66e0dee6" />
+lesson 25: set -e 
+when set -e is at the start of a script it will stop the script when a command returns a non 0 exit code <img width="705" height="490" alt="image" src="https://github.com/user-attachments/assets/7652f677-23f2-4e68-bc20-2c6ae53b37f2" />
+set -e can catch errors early nullify future propblems in the script
+
+lesson 25: set -u
+set -u forces a bash script to stop if it encounters an unitialised variable and provents scenaerios when missing data leads to incorrect results or unexpected behaviour 
+example <img width="476" height="250" alt="image" src="https://github.com/user-attachments/assets/7f5059f0-e21a-45e8-a4b9-33ca055720ed" />
+example with calculation <img width="726" height="267" alt="image" src="https://github.com/user-attachments/assets/c62dc0c9-dd0e-4fc9-8156-d9f117a5daa2" />
+as we can see here w is not a set variable so set-u catches it out and stops the script 
+
+lesson 26: set -x
+set x is a command that helps debug scripts by printing each comand in the script to the terminal before it is used
+this is helpful as you can follow the flow of your script <img width="396" height="356" alt="image" src="https://github.com/user-attachments/assets/c34b8a08-577e-41c9-a77d-7fb06d82a420" />
+
+example of it ina script <img width="707" height="420" alt="image" src="https://github.com/user-attachments/assets/b73e0987-3ade-47e7-af05-0935376cb780" />
+to debug a certain section you need both set -x and set -y
+<img width="1881" height="767" alt="image" src="https://github.com/user-attachments/assets/b4a5b5d8-f4fc-4f44-b222-5734fcfdf7ba" />
+
+lesson 27: set -eux
+
 
 
 
