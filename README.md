@@ -291,3 +291,22 @@ read command with command line argument both methods can be combined
 
 ## Lesson 20:  handling bad errors
 1 way to validate user input is by conditional statments to check validity of input 
+
+## Lesson 21:  piping
+piping allows us to pass the output of one command as input to another and allows us to connect comands
+piping allows us to perform advance data operations in functions and store them as variables
+| this is the pipe symbol<img width="923" height="359" alt="image" src="https://github.com/user-attachments/assets/4b1b1de0-c384-49de-a0b3-a41e33671d18" />
+anotehr example of piping using the grep and awk command to find errors 
+<img width="893" height="431" alt="image" src="https://github.com/user-attachments/assets/3e4bdb75-5a3d-42a8-8779-366e27e61ce9" />
+
+## Lesson 22: introduction to error handling
+what is error handling? is whe you asses what can go wrong ina  script and input necessery measure to handle those situations
+and efective error handling can save you alot of trouble 
+pre error handling
+<img width="630" height="260" alt="image" src="https://github.com/user-attachments/assets/c608b427-e325-42fd-8fe5-a88a5df5b9e3" />
+
+post error handling <img width="795" height="367" alt="image" src="https://github.com/user-attachments/assets/e38060f6-dbec-41ea-88f4-def93acb4e7b" />
+
+
+
+
