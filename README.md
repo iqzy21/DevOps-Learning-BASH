@@ -705,3 +705,10 @@ under is an example of that
 also in this lesson i learnt that 
 > is to replace old data for new 
 >> is to keep old data and append new data 
+<img width="659" height="580" alt="image" src="https://github.com/user-attachments/assets/51799445-b5ee-48ac-abe0-4bfd95d65042" />
+
+
+## Lesson 35: File Checksums
+File checksums are cryptographic hashes that provide a unique fingerprint for a file, which allows us to verify the authenticity of the file.
+the comman we use is md5sum and this command computes and displays the MD5 hash of a file to verify data integrity. <img width="472" height="347" alt="image" src="https://github.com/user-attachments/assets/1198ec40-6d37-46e5-8d7c-4a0d7b6a4d82" />
+
