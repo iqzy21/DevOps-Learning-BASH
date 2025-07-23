@@ -653,7 +653,55 @@ Bash allows us to use them all at once and I will show how they work:
 In this lesson we learn how to change PATH directories permanently because it will only be done temporary in the terminal.
 Create new directory then make script and make it executable:
 
-![Change PATH Permanently](https://github.com/user-attachments/assets/31d9e907-d879-4d2a-b8dd-2be91f040785)
+![Change PATH Permanently]<img width="538" height="127" alt="image" src="https://github.com/user-attachments/assets/9f7621a4-ff04-4d08-b7d5-22f880bd874f" />
 
-Add directory to path permanently then source.
-Now you can run from anywhere.
+
+Add directory to path permanently then source 
+the command we used was echo "export PATH=\$PATH:~/my_scripts":
+This creates the text export PATH=$PATH:~/my_scripts, which is a command that adds ~/my_scripts to your PATH variable, while preserving the existing PATH ($PATH).
+
+>> ~/.zshrc:
+This appends the above line to your .zshrc file, which is the startup script for the Zsh shell.
+<img width="595" height="145" alt="image" src="https://github.com/user-attachments/assets/92a6a872-a29f-4a2d-99f7-7d71866f9b6e" />
+
+Now you can run from anywhere. i went to the root and ran the script<img width="162" height="114" alt="image" src="https://github.com/user-attachments/assets/d840b3e4-5721-4e57-95ad-a697d8c0c5ab" />
+
+## Lesson 31: Reading Environment Variables
+environment variables allow us to store or retrieve important information within a bash script
+think of environment variables as ocntainers that hold valuable information 
+environment variables have to be in capitals 
+
+read environment variable example <img width="503" height="288" alt="image" src="https://github.com/user-attachments/assets/35f95a16-9d2e-4b1f-b550-0de3ed2baeab" /> 
+
+## Lesson 32: Reading Environment Variables
+environment variables are set variables within bash hat all have a different use below i have given some examples of this 
+🧠 General Environment Variables
+Variable	Description
+PATH	Directories to search for executable files.
+HOME	The current user’s home directory.
+USER	The username of the current user.
+SHELL	The path of the current user's shell (e.g., /bin/zsh, /bin/bash).
+PWD	The current working directory.
+OLDPWD	The previous working directory.
+LOGNAME	The user's login name.
+HOSTNAME	Name of the host/computer.
+UID	The user ID of the current user.
+EUID	The effective user ID (useful with sudo).
+GROUP	Group of the current user.
+EXAMPLE 
+<img width="890" height="613" alt="image" src="https://github.com/user-attachments/assets/6a5b4301-1db2-420c-9af5-7e70e7ab6091" />
+
+## Lesson 33: Reading files
+Reading files is an important task in scripting. It allows us to access and extract valuable information from various types of files.
+readfile loop 
+<img width="701" height="578" alt="image" src="https://github.com/user-attachments/assets/8dcaad93-2fa6-45ef-80be-b3c7b4d9c546" />
+
+file loop using cat command and processing line by line <img width="645" height="525" alt="image" src="https://github.com/user-attachments/assets/c610eaf4-937c-40af-91cb-94847391713b" />
+
+## Lesson 34: writing files
+Writing files allows us to create, modify, and store information in various formats.
+under is an example of that 
+<img width="668" height="362" alt="image" src="https://github.com/user-attachments/assets/7a35cd6f-1349-4cb7-b761-dedeec434e83" />
+also in this lesson i learnt that 
+> is to replace old data for new 
+>> is to keep old data and append new data 
