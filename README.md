@@ -712,3 +712,5 @@ also in this lesson i learnt that
 File checksums are cryptographic hashes that provide a unique fingerprint for a file, which allows us to verify the authenticity of the file.
 the comman we use is md5sum and this command computes and displays the MD5 hash of a file to verify data integrity. <img width="472" height="347" alt="image" src="https://github.com/user-attachments/assets/1198ec40-6d37-46e5-8d7c-4a0d7b6a4d82" />
 
+anotehr cammand we can use is sha256sum 
+sha256sum computes and displays the SHA-256 hash of a file to verify data integrity.
