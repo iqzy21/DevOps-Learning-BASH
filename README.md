@@ -726,3 +726,57 @@ Client ➜ Local Cache / /etc/hosts
 ➜ Authoritative Name Server (qq.com)
 ➜ Resolver returns IP to client
 <img width="796" height="460" alt="image" src="https://github.com/user-attachments/assets/67ef09a4-6746-4e5d-ae63-fc4443aed77c" />
+
+netwrok debugging tools: 'nslookup' and 'dig'
+nslookup - is a basic query tool for DNS, when you use it you can find information about a DNS records for that certain domain 
+syntax: nslookup (domain)
+example: nslookup www.google.com
+
+gig - is an advance query tool and provides more information than nslookup
+syntax: dig(domain)
+example: dig www.google.com
+
+ nslookup google.com – Explained
+Server: 10.255.255.254
+→ This is your local DNS resolver (likely your router or ISP DNS).
+
+Address: 10.255.255.254#53
+→ The #53 means it’s using port 53, the standard DNS port.
+
+Non-authoritative answer:
+→ The result came from cache, not directly from Google’s DNS server.
+
+Multiple IPs (IPv4 & IPv6):
+→ These are the actual IP addresses for google.com.
+→ Google uses many IPs for load balancing.
+
+<img width="491" height="391" alt="Screenshot 2025-07-30 174541" src="https://github.com/user-attachments/assets/05e7f7ed-2128-467a-8df6-3b9aead2ca25" />
+
+ DIG Command Breakdown – dig google.com
+QUESTION SECTION
+→ Shows the query you made (asking for A records of google.com).
+ANSWER SECTION
+→ Returns the IP addresses for google.com.
+→ Here, it lists multiple IPs (used for load balancing).
+Query Time
+→ The DNS lookup took 22 milliseconds.
+SERVER
+→ The DNS server used was 10.255.255.254 on port 53 (UDP).
+WHEN
+→ Shows the date and time the query was made.
+MSG SIZE
+→ The size of the response message: 135 bytes.
+
+<img width="690" height="527" alt="image" src="https://github.com/user-attachments/assets/d14051d9-d834-427d-b7f5-4e2e4e77d7c0" />
+
+./etx/hosts file:
+/etc/hots can be use to map domains to IP addresses 
+What is a /etc/hots - its a local file on yoru computer that maps domain namesto an IP address 
+It allows you to overide DNS settings for certain domains by providing an alternitive IP address 
+How it works: 
+when you type a domain name into your browser your computer lookst at the /etc/hosts file to see if the domain is listed there
+if its there it will use the provided IP address instead of quiring the dns server which is good for troubleshooting, developinng or testing 
+
+how to edit /etc/hosts?
+open text edito or vs code admin privilages required 
+
