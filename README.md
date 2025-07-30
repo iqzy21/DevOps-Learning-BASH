@@ -530,3 +530,97 @@ the comman we use is md5sum and this command computes and displays the MD5 hash 
 
 anotehr cammand we can use is sha256sum 
 sha256sum computes and displays the SHA-256 hash of a file to verify data integrity.
+
+CH 3 DNS
+What is DNS?
+DNS – Domain Name System
+DNS is like a contacts list for the internet.
+It allows users to access websites using domain names instead of IP addresses, which are harder to remember.
+Behind the scenes, DNS translates domain names into IP addresses so devices know where to send requests.
+Without DNS, users would need to manually type long IP addresses to visit websites.
+
+Examples of how DNS helps:
+
+Type www.google.com instead of 192.168.0.5
+Helps your browser find and connect to the correct server
+Acts like a phonebook for websites
+Makes the internet easier and more human-friendly
+<img width="275" height="183" alt="image" src="https://github.com/user-attachments/assets/34ff07f2-4b72-437c-b9d3-e7a2557f74f9" />
+
+
+DNS Components: Nameservers and zome files.
+Name servers: 
+There are 2 types authrative and recursive name servers
+Authartative name servers hold th actual DNS records when quiried they provide a definite answer IP address for a domain name
+Recursive name servers these servers do not hold the final answer instead they quirey other name servers on behald of the cluient to fidn the correct DNS Record they can also catch the information they retrived to speed up queries
+
+pratical finding DNS server of a domain 
+Dig ns (domain)
+<img width="857" height="612" alt="image" src="https://github.com/user-attachments/assets/1b36289a-4db8-4e02-8d9e-3497290a1176" />
+
+the commands just to get DNS
+dig +short ns (domain name)
+<img width="1078" height="205" alt="image" src="https://github.com/user-attachments/assets/44de7897-a6f9-4477-b5eb-be2ec7833bee" />
+
+Zone files:
+zone files are stored inside your name service and they contain information about the domain
+They help name servers answer queries about how to get tooa  domain if the name server doesnt know the answer directly 
+Zone files organise you DS information in a readable and managed way making it easier to handle 
+<img width="1960" height="1250" alt="image" src="https://github.com/user-attachments/assets/9ce273ac-791e-4bb3-a03e-2a25d748b74e" />
+
+DNS Components: records 
+Az zone file is composed of many records 
+Each record contains specific information about hosts, names servers and other recourses 
+Resource components: Record names,TTL, Class, TYpe, data 
+Record name - domain name being quired
+Time to live (TTL) indicates how long a record is valid before refresh required
+Class - name space of the record information 
+Type - type of record (A or MX or AAAA etc)
+NS - name server record
+data - The actual information corresponding to the record type. Like IP address for an A record
+<img width="656" height="246" alt="image" src="https://github.com/user-attachments/assets/2d36c599-d0cb-464c-afca-ff64f8cfaf76" />
+
+DNS records:
+A – Maps a domain name to an IPv4 address.
+AAAA – Maps a domain name to an IPv6 address.
+CNAME – Alias of one name to another. It allows you to point multiple domain names to the same IP address.
+MX – Specifies the mail server responsible for receiving email for the domain.
+TXT – Allows domain administrators to insert any text into DNS.
+Commonly used for:
+Verification purposes
+Holding SPF (Sender Policy Framework) data
+<img width="744" height="207" alt="image" src="https://github.com/user-attachments/assets/12a1c57e-e1dc-46b8-8faa-46d97aa8289f" />
+
+A record example - most common type of dns record and essential for directing trafic to the correct ip address 
+<img width="611" height="114" alt="image" src="https://github.com/user-attachments/assets/69c633ee-4f08-44b7-a7fb-134c929c1fdc" />
+
+AAAA record example - same as above but less common
+<img width="615" height="116" alt="image" src="https://github.com/user-attachments/assets/9a19ae8d-da7f-4a0c-b3e4-cd12c7982fe7" />
+
+CNAME record example - this create and alias for your domain name makes DNS managment easier by allwoing you to point different domain names to 1 IP address 
+<img width="600" height="137" alt="image" src="https://github.com/user-attachments/assets/5ff46f63-919b-4a28-9014-c4c59a65f8be" />
+
+MX record example - essential for routing emails to the correct mail servers ensuring email delibvery is reliable
+<img width="601" height="141" alt="image" src="https://github.com/user-attachments/assets/057fc3ac-c30b-446f-a4d9-cbbd103fe102" />
+
+TXT record - one of the main purposes is to verify you own the domain but also has many purposes 
+<img width="603" height="137" alt="image" src="https://github.com/user-attachments/assets/434f4676-4f2c-420f-a0aa-a0edad270fc1" />
+
+How DNS works:
+What is DNS resolution:
+DNS resolution is the process of converting domain names into IP addresses 
+DNS break down:
+DNS Route (the boss) - This is the top of the hierchary, it doesnt store details about specific domains, but rather keeps high level informaion on where to find the top-level domains underneath it.
+
+TLD'S Top Level Domains - These are liek calling your departnment heads they include familiar extentions such as .com, .org
+, .net 
+Each TLD stores information about domains within the cope
+
+Authoritive name servers Host+Zones for domains - This is where the details DS records for those domains for example google.com have their own records stored in here 
+
+Domain - each domain gas a zone and zone file where the zone is like a team within a departnemnt and the zone file is a detailed list of information
+
+This is where imformations such as IP addresses, mail servers of the domains are stored
+
+
+
