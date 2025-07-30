@@ -621,6 +621,108 @@ Authoritive name servers Host+Zones for domains - This is where the details DS r
 Domain - each domain gas a zone and zone file where the zone is like a team within a departnemnt and the zone file is a detailed list of information
 
 This is where imformations such as IP addresses, mail servers of the domains are stored
+<img width="767" height="387" alt="image" src="https://github.com/user-attachments/assets/fb947cd1-199c-457e-a84c-a2695a64f710" />
 
+This hierachy ensures when yoy type a web address into a browser it will find the right ip 
 
+DNS resulution process 
+🌐 What Happens When You Type www.google.com into Your Browser
+✅ Step-by-Step DNS Lookup Process
+1. User Action
+You type www.google.com into your browser.
 
+2. Browser Checks Cache
+Browser checks its local DNS cache.
+
+If the IP is stored, it uses it.
+
+If not, it sends a request to the local DNS resolver (usually your ISP’s resolver).
+
+3. DNS Resolver Checks Its Cache
+The resolver checks its own memory.
+
+If it doesn’t have the IP address, it proceeds to query external DNS servers.
+
+4. Query to Root DNS Server
+The root server doesn’t have the IP.
+
+But it knows where to find the TLD (Top-Level Domain) server for .com.
+
+5. Query to .com TLD Server
+The TLD server also doesn’t have the IP for google.com.
+
+But it knows the address of Google’s authoritative name server.
+
+6. Query to Authoritative Name Server
+The authoritative name server for google.com has the correct IP.
+
+Example response: 142.250.180.14
+
+7. DNS Resolver Sends IP to Browser
+The resolver returns the IP address to your browser.
+
+8. Browser Connects to Web Server
+Browser uses the IP to connect to Google’s web server.
+
+9. Website Loads
+Google.com opens in your browser.
+
+example image
+<img width="802" height="408" alt="image" src="https://github.com/user-attachments/assets/f1fbefc6-02ea-446b-a3c1-7b6427dee8aa" />
+
+📡 DNS Query Process – Step-by-Step Notes
+🔸 1. Client Starts the Process
+A device (e.g. your computer) wants to visit qq.com.
+
+It first checks the following locally:
+
+Local DNS cache
+
+/etc/hosts file (used in systems like Linux)
+
+✅ If the IP is found → the process ends here.
+❌ If not found → it sends a DNS query to the configured DNS resolver.
+
+🔸 2. DNS Resolver Checks Its Own Cache
+Resolver = like a librarian who knows where to look.
+✅ If it has the IP address in its cache → it returns it to the client.
+❌ If not found → it begins a series of external queries.
+
+🔁 The Query Chain Begins (Recursive Lookup)
+🔹 3. Resolver Queries the Root DNS Server
+The Root server is the top-level.
+
+It doesn't know the IP of qq.com, but it knows who handles .com.
+
+✅ It responds with the address of the .com TLD server.
+
+🔹 4. Resolver Queries the .com TLD Server
+The .com TLD server doesn’t know qq.com’s IP,
+
+But it knows which authoritative name server handles qq.com.
+
+✅ It replies with the address of qq.com’s name server.
+
+🔹 5. Resolver Queries the Authoritative Name Server (qq.com)
+This is the final step in the query chain.
+
+The authoritative name server for qq.com provides:
+
+✅ The DNS records (including the IP address of qq.com)
+
+🔸 6. Resolver Caches the Result
+The resolver stores the IP for qq.com to answer future queries faster.
+
+🔸 7. Resolver Sends IP to the Client
+The resolver returns the final IP address to the client.
+
+The client can now connect directly to qq.com’s web server using that IP.
+
+✅ Summary of Query Flow
+Client ➜ Local Cache / /etc/hosts
+➜ DNS Resolver Cache
+➜ Root DNS Server
+➜ TLD (.com) Server
+➜ Authoritative Name Server (qq.com)
+➜ Resolver returns IP to client
+<img width="796" height="460" alt="image" src="https://github.com/user-attachments/assets/67ef09a4-6746-4e5d-ae63-fc4443aed77c" />
